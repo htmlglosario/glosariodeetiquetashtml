@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> GLOSARIO DE ETIQUETAS EN HTML. </title>
+  <link rel="icon" href="icono.png" />
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<style>
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      font-family: system-ui, Arial, sans-serif;
+      background-color:  rgba(131, 206, 200, 0.884);
+
+    }
+
+    
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+      caption { font-weight: bold; margin-bottom: 8px; }
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: center;
+      min-width: 40px;
+    }
+
+    thead th { background:rgba(131, 206, 200, 0.884); }
+    tbody tr:nth-child(odd) { background: #fff; }
+    tbody tr:nth-child(even) { background: #f8f8f8; }
+    tbody tr:hover { background: #e6f7ff; }
+    th.row-header { background: #eee; font-weight: 600; }
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:  rgba(255, 255, 255, 0.473);
+    text-align: center;
+    }
+
+</style>
+
+<body>
+
+ <h1> GLOSARIO DE ETIQUETAS. </h1>
+
+    <table aria-label="Tabla">
+    <caption> </caption>
+    <thead>
+
+             <tr><th></th><th> ETIQUETA. </th><th> ¿PARA QUÉ SIRVE? </th><th> EJEMPLOS. </th></tr>
+             <tr><td>1-.</td><td> < title > </td> <td> Poner el nombre/título que aparecerá en la pestaña. </td> <td> < title > Nombre de la página. < /title > </td></tr> 
+             <tr><td>2-.</td><td> < body > </td> <td> Diseñar el cuerpo y la estructura del documento. </td> <td> < body > <br> Este es el cuerpo del documento. <br> < /body > </td></tr> 
+             <tr><td>3-.</td><td> < head > </td> <td> Especificar las descripciones de la pestaña. </td> <td> < head > Esto es un encabezado. <br> < /head > </td></tr>
+             <tr><td>4-.</td><td> < h1-h6 > </td> <td> Escribir títulos y subtítulos. Entre más chico sea el número, mas grande será el texto. Osea que  h1 es el más grande. </td> <td> < h1 > <h1> h1. </h1> < /h1 > <br> < h2 > <h2> h2. </h2> < /h2 > <br> < h3 > <h3> h3. </h3> < /h3> <br> < h4 > <h4> h4. </h4> < /h4 > <br> < h5 > <h5> h5. </h5> < /h5 > <br> < h6 > <h6> h6. </h6> < /h6 > </td> </tr> 
+             <tr><td>5-.</td><td> < p > </td> <td> Escribir párrafos. </td> <td> < p > Esto es un párrafo. <br> < /p > </td></tr> 
+             <tr><td>6-.</td><td> < b > </td> <td> Escribir el texto en Negritas. </td> <td> < b > <b> Esto es un texto en negritas. </b> <br> < /b > </td></tr>
+             <tr><td>7-.</td><td> < a > </td> <td> Anclar un enlace. </td> <td> < a > <a href="https//google.com"> Esto es un enlace. </a> <br> < /a ></a></td></tr>
+             <tr><td>8-.</td><td> < main > </td> <td> Señala lo principal del documento. </td> <td> < main > Índica el contenido principal. < /main > </td></tr>
+             <tr><td>9-.</td><td> < footer > </td> <td> Indicar el pie de página. </td> <td> < footer > <footer> Aquí índica el pie de página. </footer> < /footer > </td></tr> 
+             <tr><td>10-.</td><td> < i > </td> <td> Escribir el texto en cursiva. </td> <td> < i > <i> Esto es un texto en cursiva. </i> < /i> </td> </tr> 
+             <tr><td>11-.</td><td> < sub > </td> <td> Poner subíndices. </td> <td> < p > <p> Esto es un </p> < /p > < sub > <sub> subíndice. </sub> < /sub > </td></tr> 
+             <tr><td>12-.</td><td> < ul > </td> <td> Crea listas desordenadas. </td> <td>  < ul > <br> < li > <ul> <li> Esto </li> <li> es </li> <li> una </li> <li> lista </li> <li>ordenada. </li> <br> </ul> < /li > <br> < /ul> </td></tr> 
+             <tr><td>13-.</td><td> < div > </td> <td> Crear divisiones para separar o seccionar textos/documentos. </td> <td> <div> < div > Separa un texto... < /div > </div> <br> < div > <div> de otro texto. </div> < /div > </td> </tr> 
+             <tr><td>14-.</td><td> < header > </td> <td> Poner encabezados. </td> <td> <header> < header > <br> Esto es un encabezado. <br> < /header > </header></td></tr>
+             <tr><td>15-.</td><td> < sup > </td> <td> Poner textos en superíndice. </td> <td> <p> < p > Esto es un <br> < /p > </p> < sup > <sup> superíndice. </sup> <br> < /sup ></td></tr>
+             <tr><td>16-.</td><td> < blockquote > </td> <td> Citas de sitios web externos. </td> <td> < blockquote > <blockquote> Esto es una cita de un sitio web externo. </blockquote> < /blockquote > </td></tr>
+             <tr><td>17-.</td> <td>< ol ></td> <td> Crear listas ordenadas. </td> <td> < ol> <ol> < li > <li> Esto es </li> < /li > <br><br> < li > <li> una lista </li> < /li > <br><br> < li > <li> ordenada. </li> < /li > </ol> < /ol > </td></tr>
+             <tr><td>18-.</td><td> < dl > </td><td>Crear una lista de descripciones. </td> <td> <h2> Lista de descripciones. </h2> < dl > <br> <dl> <dt> < dt > <br> Café <br> < /dt > </dt> <dd> < dd > - bebida caliente negra. < /dd ></dd> < dt > <dt> Leche </dt> < /dt >   < dd > <dd> -bebida fria blanca. </dd> < /dd > </dl></td></tr>
+             <tr><td>19-.</td> <td> Multi elementos div. </td> <td>Colocar colores directos en todos los bloques div. </td> <td> < div style="background-color: FFC0C7" ; > <div style="background-color: FFC0C7" ;> <p> < p > Multi div. < /p > </p> </p> <br> < /div > </div> </div></td> </tr>
+
+            </thead>
+    <tbody>
+    </tbody>
+
+</body>
+</html>
