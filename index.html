@@ -1,162 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog Personal</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>G-mingHub - Noticias de Videojuegos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffe2a8;
+            color: #333;
+        }
+
+        header {
+            background-color: #bf6948;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+        }
+
+        footer .contact-info {
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input, textarea, button {
+            margin-top: 5px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #337ab7;
+        }
+
+        article {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article h3 {
+            margin-top: 0;
+        }
+
+        .featured-image, .news-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .featured-image {
+            width: 20%;
+        }
+
+        .news-image {
+            width: 30%;
+        }
+    </style>
 </head>
-
-
 <body>
     <header>
-        <div class="logo">
-            <h1 class="logo-titulo"><span>Mi Blog </span>Personal</h1>
-        </div>
-
-        <ul class="nav">
-            <li><a href="index.html">Index</a></li>
-            <li><a href="inicio.html">Inicio</a></li>
-            <li><a href="acercademi.html">Sobre Mi</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-
+        <h1>G-mingHub</h1>
+        <p>Tu fuente de noticias relevantes sobre videojuegos</p>
     </header>
-
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
     <main>
-<div class="contenido">
-
-    <div class="main">
-        <h1 class="main-titulo">Posts Recientes</h1>
-
-        <div class="posts">
-            <img src="Imagenes/Yo.jpeg" alt="Imagen de Mi" class="imagen-post" title="Atentamente: Yo">
-            <div class="texto">
-            <h1>Acerca de Mi &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   <span>Carpe Diem</span></h1>
-        <p>Mi nombre es Carsten Eduardo Becerra Adriani, naci el 29 de Octubre de 2008 en Marshall Town, Iowa; Una ciudad ubicada en los Estados Unidos. Desde 2010 mi familia y yo nos mudamos a Mexico donde actualmente vivo: Jamay.
-        Actualmente soy estudiante del CBTis49 y curso actualmente en la especialidad de Programacion. En el area de cultura y arte, formo parte de una orquesta llamada OSEJ en el cual jovenes de todo el estado se juntan para tocar musica sinfonica.</p>   </div>
-        <a href="http://cbtis49.edu.mx/" class="btn">Leer mas</a>
-        </div>
-
-        <div class="hueco"></div>
-
-    <div class="posts">
-        <a href="https://www.chess.com/"><img src="Imagenes/ajedrez.png" alt="Chess.com" class="imagen-post" title="Chess.com"></a>
-        <div class="texto">
-        <h1>El Ajedrez como Mi Pasatiempo</h1>
-<p>"El ajedrez no es como la vida, es la vida misma" Dijo el ex-campeon mundial del Ajedrez llamdo Robert James Fischer. El Ajedrez es un 
-    gimnasio mental en la que una persona puede conocer durante su vida. Para mi el Ajedrez ha sido una gran leccion de vida, ya que gracias a el 
-    he podido lograr cosas y aprender a aprender debido a los algoritmos necesarios para poder comprender el ajedrez como un todo.
-</p>   </div>
-<a href="https://www.chess.com/" class="btn">Leer mas</a>
-</div>
-
-<div class="hueco"></div>
-
-<div class="posts">
-    <img src="Imagenes/Orchestra.jpeg" alt="Orchestra" class="imagen-post" title="Orquesta Blas Galindo" width="270">
-    <div class="texto">
-    <h1>La musica me cambio la vida</h1>
-<p>"La música es el lenguaje de la emoción porque sin música la vida sería un error." Durante mi vida he tenido experiencias inolvidables en
-    cuanto al ambito de la musica; La musica para mi ha sido una trayectoria importante en mi formacion debido a que me ha llegado a dar lecciones de 
-    vida mostrandome lo lejos que puede llegar una persona en una temprana edad. La musica es un arte que no puede ser olvidado, gracias a ello podemos transmitir emociones a todo el mundo.
-</p>   </div>
-<a href="https://misprogramas.jalisco.gob.mx/programas/apoyo/ECOS%2C-Musica-para-la-Paz/735/2023" class="btn">Leer mas</a>
-</div>
-
-<div class="hueco"></div>
-
-<div class="posts">
-    <img src="Imagenes/patiodgeti.png" alt="Patio DGETI" class="imagen-post" title="Centro de Bachillerato Tecnologico industrial y de servicios No.49" width="270">
-    <div class="texto">
-    <h1>Mi escuela: CBTis49</h1>
-<p>Orgullosamente puedo decir que estudio en el CBTis49, una escuela de Media Superior que se encuentra en la Zona Cienega ubicada en Ocotlan.
-    La escuela me ha mostrado como es la vida semi profesional y me ha ayudado a conocerme a mi mismo gracias a las grandes aptitudes de los maestros del plantel.
-    Personalmente, cursar la escuela ha sido uno de mis mejores logros debido al grande esfuerzo que se tiene que poner gracias a la exigencia de los docentes del plantel.
-</p>   </div>
-<a href="http://cbtis49.edu.mx/" class="btn">Leer mas</a>
-</div>
-
-<div class="hueco"></div>
-
-<div class="posts">
-    <a href="https://www.gob.mx/insabi/articulos/10-de-septiembre-dia-mundial-de-prevencion-del-suicidio-336621"><img src="Imagenes/10sep.jpg" alt="Dia de la prevencion del suicidio" class="imagen-post" title="10 de Septiembre: Dia de la prevencion del suicidio"></a>
-    <div class="texto">
-    <h1>Dia internacional de la prevencion del Suicidio</h1>
-    <div class="sep">
-<p>El suicidio es un evento que afecta de manera global a las familias, a las comunidades y a los países. Cada año, a nivel mundial, se suicidan cerca de un millón de personas. Esto equivale a una persona pierde la vida cada 40 segundos.
-    El suicidio ocurre principalmente en personas jóvenes, es la segunda causa de muerte en personas de 15 a 29 años. Las investigaciones muestran que más del 95% de las personas que se suicidan tienen depresión u otro trastorno mental, de ahí que la atención temprana de la depresión puede prevenir intentos de suicidio o su consumación.
-    La línea telefónica Línea de la Vida brinda apoyo emocional y un tratamiento adecuado a las personas que padecen depresión.
-    Si tú o alguien a quien conoces necesita ayuda, recomiéndale que llame a la Línea de la Vida, al 800 911 2000.
-    </p>  </div> </div>
-<a href="https://www.gob.mx/insabi/articulos/10-de-septiembre-dia-mundial-de-prevencion-del-suicidio-336621" class="btn">Leer mas</a>
-</div>
-</div>
-</div>
-</main>
-
-        <div class="empujar-footer"></div>
-
+        <section id="inicio">
+            <h2>Bienvenido a G-mingHub</h2>
+            <p>En G-mingHub, te mantenemos al día con las últimas noticias y tendencias en el mundo de los videojuegos. Desde lanzamientos de nuevos títulos hasta análisis de juegos, te ofrecemos todo lo que necesitas saber.</p>
+            <img src="C:\Users\delan\OneDrive\Pictures\Screenshots\Captura de pantalla 2025-09-29 234104.png" alt="Controlador de Juegos" class="featured-image">
+        </section>
+        <section id="noticias">
+            <h2>Noticias Recientes</h2>
+            <article>
+                <h3>Nuevo Tráiler de "Cyberpunk 2077: Phantom Liberty"</h3>
+                <p>CD Projekt Red ha lanzado un nuevo tráiler para "Cyberpunk 2077: Phantom Liberty", mostrando nuevas escenas de juego y personajes. El DLC está programado para lanzarse en 2026.</p>
+                <img src="C:\Users\delan\OneDrive\Pictures\Screenshots\Captura de pantalla 2025-09-30 121652.png" alt="Cyberpunk 2077" class="news-image">
+            </article>
+            <article>
+                <h3>"The Legend of Zelda: Tears of the Kingdom" Vende Más de 10 Millones de Copias"</h3>
+                <p>Nintendo ha anunciado que "The Legend of Zelda: Tears of the Kingdom" ha vendido más de 10 millones de copias en su primer mes, superando las expectativas y convirtiéndose en uno de los lanzamientos más exitosos de la serie.</p>
+                <img src="C:\Users\delan\OneDrive\Pictures\Screenshots\Captura de pantalla 2025-09-30 121909.png" alt="The Legend of Zelda: Tears of the Kingdom" class="news-image">
+            </article>
+            <article>
+                <h3>"Final Fantasy XVI" Recibe Críticas Positivas"</h3>
+                <p>"Final Fantasy XVI" ha sido aclamado por la crítica y los fans, destacando su historia envolvente y su innovador sistema de combate. El juego ha recibido numerosas nominaciones en los premios de la industria.</p>
+                <img src= "C:\Users\delan\OneDrive\Pictures\Screenshots\Captura de pantalla 2025-09-30 122028.png" alt="Final Fantasy XVI" class="news-image">
+            </article>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o deseas enviar una noticia, ponte en contacto con nosotros a través del siguiente formulario:</p>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
     <footer>
-       <div class="footer">
-
-        <div class="footer-contenido">
-
-                    <!--Seccion izquierda-->
-         <div class="footer-seccion informacion">
-            <h1 class="logo-titulo"><span>Mi Blog </span>Personal</h1>
-            <p>
-                Este Blog Personal tiene el motivo de practicar mediante el uso de
-                HTML y aplicacion de estilos de CSS en VisualStudioCode; Contiene
-                datos personales sobre mi, asi como la informacion de mi contacto.
-                que se mostraran a continuacion:
-            </p>
-            <p id="contacto"><b>
-            &nbsp; &nbsp; &nbsp; Telefono:
-             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;Correo: <br>
-            </b>
-            </p>
-            &nbsp; +52-392-207-5463
-            &nbsp; BecerraAdrianiCarstenEduardo@gmail.com
-            <p>
-                &nbsp; Instagram: Carsten_Prixpyyy &nbsp; &nbsp;Facebook: Becerra Adriani Carsten
-            </p>
-            <h2 class="h2"><span>Trabajo </span>No.1</h2>
-         </div>
-
-                    <!--Seccion centrada-->
-         <div class="footer-seccion contacto">
-            <h1 id="h1">Enlaces</h1>
-            <ul>
-                <a href="index.html"><li>Index</li></a>
-                <a href="inicio.html"><li>Inicio</li></a>
-                <a href="acercademi.html"><li>Acerca de Mi</li></a>
-                <a href="contacto.html"><li>Contacto</li></a>
-                <a href="https://www.facebook.com/share/176AT9FzWD/"><li>Facebook</li></a>
-                <a href="https://www.instagram.com/carsten_prixpyyy?igsh=dnM1NXF2cDBidm50"><li>Instagram</li></a>
-            </ul>
-            </div>
-
-                    <!--Seccion Derecha-->
-         <div class="footer-seccion datos">
-            <h1 class="titulo"><span>Datos </span>Personales</h1>
-            <p class="texto-datos">
-                Becerra Adriani Carsten Eduardo<br>
-                Centro de Bachillerato Tecnologico industrial y de servicios No.49<br>
-                5*SE<br>
-                Programacion<br>
-                Mtra. Dunia Luna Martinez
-            </p>
-            <h4 class="fecha">a 19 de septiembre de 2025.</h4>
-         </div>
+        <div class="contact-info">
+            <h3>Contacto</h3>
+            <p>Si tienes alguna pregunta o sugerencia, no dudes en contactarnos :</p>
+            <p>Email: gilbertorigami@gmail.com</p>
+            <p>Teléfono: +52 392 107 0711</p>
+            <p>Dirección: 1234 Calle Limon, Ocotlan, Jalisco, Mexico</p>
         </div>
-
-        <div class="footer-copyright">
-             &copy; 2025 Mi Blog Personal. Todos los derechos reservados
-        </div>
-       </div> 
+        <p>&copy; 2025 G-mingHub. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
 
