@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #0a0d2c;
+    font-family: 'Lora', serif;
+}
+
+                          /*Header*/
+header * {
+color:#f6f6f6;
+}
+
+header{
+    background: #095255;
+    height: 66px;
+}
+
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 1.5em;
+}
+
+header .logo-titulo{
+margin: 14px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header .logo-titulo span{
+    color:rgb(38, 246, 246);
+    }
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li{
+    float: left;
+}
+
+header ul li a{
+    display: block;
+    padding: 22px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    background: #006669;
+    transition: 0.5s;
+}
+                          /*Main*/
+main{
+    color:#f6f6f6
+}
+.contenido {
+    width: 90%;
+    margin: 30px auto 30px;
+}
+
+
+.contenido .main-titulo
+{
+    font-size: 2.4em;
+    color: #f6f6f6;
+    text-align: center;
+}
+
+.contenido .main .posts{
+    width: 95%;
+    height: 270px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: rgb(43, 22, 118);
+}
+
+.contenido .main .posts .imagen-post
+{
+    widows: 45%;
+    height: 100%;
+    float: left;
+}
+
+.contenido .main .posts .texto
+{
+    width: 78%;
+    padding:10px;
+    float: right;
+}
+
+.contenido .main .posts .texto p
+{
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.contenido .main .posts .texto h1 span{
+color: rgb(75, 217, 249);
+}
+
+.contenido .main .posts .btn
+{
+  font-size: 1.4em;
+ background: rgb(29, 118, 115); 
+ float: right;  
+ margin-right: 50px;
+ border-radius: 5px;
+ color: #f6f6f6;
+ text-align: center;
+ width: 5em;
+ height: 1.3em;
+ text-decoration: none;
+}
+.contenido .main .posts .btn:hover
+{
+    background: rgb(41, 180, 175); 
+transition: 0.5s;
+}
+
+.contenido .main .hueco
+{
+    height: 1px;
+    width: 100%;
+}
+
+.contenido .main .posts .sep{
+font-size: 0.84em;
+line-height: 1.6em;
+margin: 0px;
+}
+                          /*Footer*/
+.empujar-footer{
+    min-height: 3%;
+}
+.footer {
+    background: #303036;
+    color: #f6f6f6;
+    height: 400px;
+    position: relative;
+    
+}
+
+.footer .logo-titulo{
+    color: rgb(145, 144, 144);
+    margin: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+    .footer .logo-titulo span{
+        color:rgb(41, 212, 212);
+        }
+     #contacto{
+        font-size: 1.3em;
+        margin: 5px;
+        color:#f6f6f6;
+     }
+        .footer .h2 {
+            text-align: right;
+            font-size: 2em;
+            color:#f6f6f6;
+
+        }
+
+        .footer .h2 span {
+            color:aquamarine;
+        }
+
+.footer .footer-contenido
+{
+    height: 350px;
+    display: flex;
+}
+.footer .footer-contenido .footer-seccion
+{
+    flex: 1;
+    padding: 25px;
+}
+
+#h1
+{
+    font-size: 2.5em;
+    padding-left: 155px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.footer .footer-contenido ul a
+{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    padding-left: 145px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer-contenido ul a:hover
+{
+    margin-left: 15px;
+transition: all 0.3s;
+}
+
+.footer .footer-contenido .titulo
+{
+    color:violet;
+    font-size: 2.4em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-contenido .titulo span
+{
+    color:#f6f6f6;
+}
+
+.footer .footer-contenido .texto-datos
+{
+    color: #f6f6f6;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+.footer .footer-contenido .fecha
+{
+    display: block;
+    text-align: right;
+    padding: 30px;
+    font-size: 1.4em;
+    margin-left: 50px;
+}
+
+.footer .footer-copyright{
+    background: #343a40;
+    color: #686868;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
